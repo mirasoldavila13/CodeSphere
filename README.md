@@ -3,7 +3,7 @@
 Welcome to **CodeSphere**, a responsive portfolio landing page built with **TailwindCSS**. This project showcases personal information, completed projects (**currently as mockups**), and a contact form to connect with visitors.
 
 ## 🌐 Live Demo  
-[Click here to view the live site](https://<your-github-username>.github.io/CodeSphere/)
+[Click here to view the live site](https://mirasoldavila13.github.io/CodeSphere/)
 
 ---
 
