@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSphere – A Developer's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSphere – A Developer's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
 </head>
-<body>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold">CodeSphere</h1>
+    <ul class="hidden sm:flex space-x-6">
+      <li><a href="#" class="hover:text-indigo-400">Home</a></li>
+      <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+      <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" class="sm:hidden text-2xl">☰</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
+           style="background-image: url('https://source.unsplash.com/1600x900/?technology');">
+    <h2 class="text-5xl font-extrabold mb-4">Welcome to CodeSphere</h2>
+    <p class="text-lg mb-8">Crafting beautiful and functional web solutions.</p>
+    <a href="#projects" class="bg-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-500 transition-transform transform hover:scale-105">
+      View My Work
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="p-12 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+    <p class="text-lg">
+      I am a passionate web developer focused on building seamless, user-friendly, and efficient web applications.
+      I believe in the power of code to transform ideas into reality.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-12 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="p-6 bg-gray-800 rounded-md">
+        <h3 class="text-2xl font-semibold mb-4">Project One</h3>
+        <p>A responsive design showcase built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-md">
+        <h3 class="text-2xl font-semibold mb-4">Project Two</h3>
+        <p>An advanced task management tool with real-time updates and local storage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="p-12 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+    <form class="flex flex-col space-y-4">
+      <input type="text" placeholder="Your Name" class="p-3 bg-gray-700 rounded-md" />
+      <input type="email" placeholder="Your Email" class="p-3 bg-gray-700 rounded-md" />
+      <textarea placeholder="Your Message" class="p-3 bg-gray-700 rounded-md"></textarea>
+      <button class="bg-indigo-600 px-6 py-3 rounded-full hover:bg-indigo-500">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-6 bg-gray-900">
+    <p>&copy; 2024 CodeSphere. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
