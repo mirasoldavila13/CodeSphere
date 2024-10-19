@@ -12,14 +12,20 @@
   <!-- Navbar -->
   <nav class="flex justify-between items-center p-6 bg-gray-800">
     <h1 class="text-2xl font-bold">CodeSphere</h1>
-    <ul class="hidden sm:flex space-x-6">
-      <li><a href="#" class="hover:text-indigo-400">Home</a></li>
-      <li><a href="#about" class="hover:text-indigo-400">About</a></li>
-      <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
-      <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="sm:hidden text-2xl focus:outline-none">☰</button>
+
+    <!-- Navbar Links -->
+    <ul id="nav-links" class="hidden sm:flex sm:space-x-6 absolute sm:static top-20 left-0 w-full sm:w-auto bg-gray-800 sm:bg-transparent flex-col sm:flex-row items-center sm:items-start">
+      <li class="w-full text-center sm:w-auto"><a href="#" class="block py-2 hover:text-indigo-400">Home</a></li>
+      <li class="w-full text-center sm:w-auto"><a href="#about" class="block py-2 hover:text-indigo-400">About</a></li>
+      <li class="w-full text-center sm:w-auto"><a href="#projects" class="block py-2 hover:text-indigo-400">Projects</a></li>
+      <li class="w-full text-center sm:w-auto"><a href="#contact" class="block py-2 hover:text-indigo-400">Contact</a></li>
     </ul>
-    <button id="menu-toggle" class="sm:hidden text-2xl">☰</button>
   </nav>
+
+
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
